@@ -34,11 +34,11 @@
 // mixed.push(20);
 
 //Function Basics
-let greet: Function;
+// let greet: Function;
 
-greet = () => {
-  console.log("Hello World");
-};
+// greet = () => {
+//   console.log("Hello World");
+// };
 
 const add = (a: number, b: number, c?: number | string): void => {
   console.log(a + b); // Here "?" mark indicates optional parameter
