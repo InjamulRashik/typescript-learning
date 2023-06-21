@@ -25,11 +25,16 @@
 // let mixed: (string | number | boolean)[] = [];
 // mixed.push("Hello");
 // mixed.push(20);
-let greet;
-greet = () => {
-    console.log("Hello World");
-};
+//Function Basics
+// let greet: Function;
+// greet = () => {
+//   console.log("Hello World");
+// };
 const add = (a, b, c) => {
     console.log(a + b); // Here "?" mark indicates optional parameter
 };
 add(5, 10);
+const minus = (a, b) => {
+    return a + b;
+};
+let result = minus(10, 7);
