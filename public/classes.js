@@ -1,4 +1,19 @@
-import { Invoice } from "./classes/invoice.js";
+import { Invoice } from "./classes/Invoice.js";
+const me = {
+    name: "Rashik",
+    age: 30,
+    speak(text) {
+        console.log(text);
+    },
+    spend(amount) {
+        console.log("I spent", amount);
+        return amount;
+    },
+};
+const greetPerson = (person) => {
+    console.log("Hello", person.name);
+};
+greetPerson(me);
 // class Invoice {
 //   constructor(
 //     readonly client: string,

@@ -1,4 +1,28 @@
-import { Invoice } from "./classes/invoice.js";
+import { Invoice } from "./classes/Invoice.js";
+
+interface isPerson {
+  name: string;
+  age: number;
+  speak(a: string): void;
+  spend(a: number): void;
+}
+
+const me: isPerson = {
+  name: "Rashik",
+  age: 30,
+  speak(text: string): void {
+    console.log(text);
+  },
+  spend(amount: number): number {
+    console.log("I spent", amount);
+    return amount;
+  },
+};
+const greetPerson = (person: isPerson) => {
+  console.log("Hello", person.name);
+};
+
+greetPerson(me);
 
 // class Invoice {
 //   constructor(
